@@ -3,7 +3,11 @@
 ## Commits
 
 - 查看历史的commits - `git log --all --graph`
-
+- 删除 push 到远端仓库的上一条 commit 信息 - [ref](https://stackoverflow.com/questions/6459080/how-can-i-undo-a-git-commit-locally-and-on-a-remote-after-git-push)
+    ```sh
+    git reset --hard HEAD^
+    git push -f <remote> <branch>
+    ```
 
 ## Branch
 
@@ -44,10 +48,6 @@ Merge会把另一个分支合并到当前所在的分支，并把2个分支中�
 - 合并远端 repo 所有更改 - `git fetch`
 - 切换到 main 主分支，进行远端和本地的合并 - `git pull origin main`
 
-## Revert
+## Reset
 
-1. 删除 push 到远端仓库的上一条 commit 信息 - [ref](https://stackoverflow.com/questions/6459080/how-can-i-undo-a-git-commit-locally-and-on-a-remote-after-git-push)
-    ```sh
-    git reset --hard HEAD^
-    git push -f <remote> <branch>
-    ```
+- 取消 git 仓库 - `rm -rf .git`
