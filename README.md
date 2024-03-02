@@ -1,4 +1,4 @@
-# [Git Tutorial](https://www.youtube.com/watch?v=Q1kHG842HoI) Note
+# Git
 
 ## Commits
 
@@ -8,10 +8,15 @@
     git reset --hard HEAD^
     git push -f <remote> <branch>
     ```
+- 修改刚刚提交的 commit 信息
+    ```sh
+    git commit --amend -m "新的提交信息"
+    git push --force origin <your-branch-name> #force 会强制覆盖远端仓库的提交，只有确保是绝对安全的情况才能这样做
+    ```
 
 ## Branch
 
-- 创建分支 - `git branch <branch-name>`
+- 创建分支 - `git branch <branch-name>` -[ref](https://www.youtube.com/watch?v=Q1kHG842HoI)
     - 创建一个分支会复制一份现有的所有代码。
     - Branch的命名一般是正在 working on 的featrue，如“social login”
 
