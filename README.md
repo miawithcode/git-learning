@@ -56,3 +56,4 @@ Merge会把另一个分支合并到当前所在的分支，并把2个分支中�
 ## Reset
 
 - 取消 git 仓库 - `rm -rf .git`
+- 重设远端仓库的链接 - `git remote set-url origin https://github.com/OWNER/REPOSITORY.git`
